@@ -1,0 +1,2 @@
+(function($){if($('section').hasClass('parallax')){$('section.parallax').data('type','background');$('section.parallax').data('speed','3');}
+$(document).ready(function(){$window=$(window);$('section.parallax').each(function(){var $bgobj=$(this);$(window).scroll(function(){var yPos=-(($(window).scrollTop()-$bgobj.offset().top)/$bgobj.data('speed'));var coords='50% '+yPos+'px';$bgobj.css({backgroundPosition:coords});});});});})(jQuery);
