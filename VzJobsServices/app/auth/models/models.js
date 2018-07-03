@@ -1,7 +1,7 @@
-var dbConfig = require('../config/dbconfig');
+var dbConfig = require('../../../configs/dbconfig');
 var models = require('express-cassandra');
 
-models.setDirectory( __dirname + '/models').bind(
+models.setDirectory( __dirname).bind(
     {
         clientOptions: dbConfig.clientOptions,
         ormOptions: dbConfig.ormOptions

@@ -1,3 +1,4 @@
 module.exports = {
-    'secret': 'supersecret'
+    'secret': 'supersecret',
+    'exptime':'86400'
   };
