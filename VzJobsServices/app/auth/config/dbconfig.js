@@ -3,9 +3,9 @@ var expressCassandra = require('express-cassandra');
 var clientOptions = {
     contactPoints: ['127.0.0.1'],
     protocolOptions: { port: 9042 },
-    keyspace: 'mykeyspace',
+    keyspace: 'vzjobs',
     queryOptions: {consistency: expressCassandra.consistencies.one},
-    authProvider: new models.driver.auth.PlainTextAuthProvider('my_user', 'my_password')
+    // authProvider: new models.driver.auth.PlainTextAuthProvider('my_user', 'my_password')
 };
 
 var dbOrmOptions = {

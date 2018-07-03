@@ -6,7 +6,7 @@ var serverConfig = require('./configs/server-config')
 // Apps
 var graphService = require('./app/graphs/index');
 // var authService = require('./app/auth/index');
-var authService = require('./app/auth/temp_/authcontroller');
+var authService = require('./app/auth/controller/authcontroller');
 var fileHandlerService = require('./app/filehandler/index');
 
 var app = express();
