@@ -6,6 +6,7 @@ var serverConfig = require('./configs/server-config')
 // Apps
 var graphService = require('./app/graphs/index');
 // var authService = require('./app/auth/index');
+var authService = require('./app/auth/temp_/authcontroller');
 var fileHandlerService = require('./app/filehandler/index');
 
 var app = express();
@@ -13,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('dev'));
 
-// app.use('/', authService);
+app.use('/auth', authService);
 app.use('/file', fileHandlerService);
 app.use('/graphql', graphService);
 
